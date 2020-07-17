@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.contact-infor{
+    width: 85%;
+     max-width:600px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#070707 ;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.contact-infor h1{
+    margin-top: 0;
+    font-weight: 200px;
+    color: white;
+}
+
+.checkoutdog{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.checkoutdog{
+    display: block;
+    text-align: left;
+    color: #053C5E;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+ .checkoutdog input{
+    width: 100%;
+   border: none;
+     background: none;
+   outline: none;
+     font-size: 16px;
+    
+    color:#ee6c4d;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+} 
