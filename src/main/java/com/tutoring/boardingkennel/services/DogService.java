@@ -11,4 +11,6 @@ public interface DogService {
     Dog findbyName (String name);
 
     List<Dog> findByKennelSize(KennelSize size);
+
+    List<Dog> getAllDogs();
 }
