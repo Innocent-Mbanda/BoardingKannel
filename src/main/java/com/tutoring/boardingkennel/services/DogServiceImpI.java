@@ -36,4 +36,9 @@ public class DogServiceImpI implements DogService{
     public List<Dog> getAllDogs() {
         return dogRepo.findAll();
     }
+
+    @Override
+    public void delete(Dog dog) {
+        dogRepo.delete(dog);
+    }
 }

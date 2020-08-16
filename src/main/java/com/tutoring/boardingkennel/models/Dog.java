@@ -31,6 +31,7 @@ public class Dog {
             this.isfeed = isfeed;
             this.kennelSize =kannelSize;
             this.amountOfFed =0;
+            this.age =age;
         }
 
         public void printDogInformation() {
@@ -61,8 +62,11 @@ public class Dog {
 
         }
 
+    public long getId() {
+        return id;
+    }
 
-        public String getBreed() {
+    public String getBreed() {
             return breed;
         }
 

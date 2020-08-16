@@ -1,6 +1,6 @@
 export default class Utils {
   static post(path, postData) {
-    fetch(path, {
+    return (fetch(path, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -8,12 +8,12 @@ export default class Utils {
       body: JSON.stringify(postData),
     })
       .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
+      // .then(data => {
+      //   console.log('Success:', data);
+      // })
       .catch((error) => {
         console.error('Error:', error);
-      })
+      }))
   }
 
   static get (path) {
