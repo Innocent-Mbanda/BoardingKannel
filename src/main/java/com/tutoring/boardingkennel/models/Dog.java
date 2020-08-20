@@ -21,10 +21,10 @@ public class Dog {
         public Dog (){
             this.allergies = "";
         }
-        public Dog ( String bread, int age, String name, String  alligies,
+        public Dog ( String bread, int age, String name, String  allergies,
                      int amountOfFood,  int amountOfFed, boolean isfeed,KennelSize kannelSize){
             this.breed = bread;
-            this.allergies = alligies;
+            this.allergies = allergies;
             this. name =name;
             this.amountOfFood = amountOfFood;
             this.amountOfFed = amountOfFed;

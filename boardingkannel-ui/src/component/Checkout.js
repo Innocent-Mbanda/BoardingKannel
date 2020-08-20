@@ -6,6 +6,7 @@ import Utils from "./Utils";
 class Checkout extends Component {
   defaultState = {
     boardingDogs: [],
+    search:""
   };
   constructor() {
     super();
@@ -15,6 +16,11 @@ class Checkout extends Component {
     Utils.get("dogs").then((data) => {
       this.setState({ boardingDogs: data });
     });
+  }
+  onChange=(e)=>{
+    this.setState({
+      search:e.target.value
+    })
   }
   checkout = (dog) => {
       console.log(dog)
@@ -31,8 +37,15 @@ class Checkout extends Component {
   render() {
     return (
       <div>
+      <div><Form.Control type="text"
+       placeholder="Search" onChange ={this.onChange}/> </div>
         <div className="grid-page">
           {this.state.boardingDogs.map((dog) => {
+            const search =this.state.search;
+            if(search !== ''
+            && dog.name.toLowerCase().indexOf(search.toLowerCase()) === -1){
+              return null;
+            }
             return (
               <ClickCard
                 key={"dog-card" + dog.name}
